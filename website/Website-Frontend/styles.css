@@ -1,0 +1,48 @@
+body {
+    background-image: url("MountainPhoto.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+.resume-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  /* 1. Force the image to be a perfect square */
+  width: 200px;
+  height: 200px;
+  
+  /* 2. Turn the square into a perfect circle */
+  border-radius: 50%;
+  
+  /* 3. Crop the image nicely inside the circle without stretching it */
+  object-fit: cover;
+  
+    float: right;
+  margin-left: 20px; /* Adds space between the text and the image */
+  margin-bottom: 10px;
+  max-width: 300px; /* Optional: limits the image size */
+}
+.visitor-count {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  z-index: 1000;
+}
+#VisitorCounter {
+  display: inline;
+}
